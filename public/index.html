@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Skilled Landing Page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="text-[16px] font-plusJakartaSans min-h-screen overflow-x-hidden" style="background-image: var(--gradFour)">
+ 
+  <nav class="relative py-4">
+    <!-- flex container -->
+    <div class="container mx-auto px-5 flex justify-between items-center">
+      <!-- logo -->
+      <a href="#"><img src="./images/logo-dark.svg" alt="logo" class="w-20"></a>
+      <!-- cta -->
+      <a href="" class="text-white bg-primary-blue w-fit rounded-full text-xs p-2 px-5 font-bold">
+        Get Started
+      </a>
+    </div>
+    <!-- <img src="./images/image-hero-desktop@2x.png" alt="hero" class="absolute -top-full -translate-y-36"> -->
+  </nav>
+  <main class="py-10 relative">
+    <!-- <img src="./images/image-hero-desktop@2x.png" alt="hero" class="absolute -right-1/2 top-1/2 -translate-y-1/2"> -->
+    <!-- grid container -->
+    <div class="px-5 grid md:grid-cols-2 md:items-center md:pl-20">
+      <!-- hero text --> <!-- grid item -->
+      <div class="col-start-1 col-end-2 relative text-center md:text-left">
+        <h1 class="text-5xl lg:text-7xl font-bold text-primary-blue">Maximize skill,<br>minimize budget</h1>
+        <p class="text-primary-textGray max-w-[35ch] py-4 mx-auto md:mx-0 lg:py-8">Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
+        <a href="#" class="text-xs text-white p-3 px-5 rounded-full block w-fit mt-3 mx-auto group relative md:mx-0" style="background-image: var(--gradOne);">
+          Get Started
+          <!-- hover state -->
+        <div class="absolute inset-0 bg-white ease-in-out duration-300 rounded-full opacity-0 group-hover:opacity-30"></div>
+        </a>
+      </div>
+      <!-- hero image --> <!-- grid item -->
+      <div class="">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="./images/image-hero-desktop@2x.png">
+          <source media="(min-width: 1024px)" srcset="./images/image-hero-desktop.png">
+          <source media="(min-width: 768px)" srcset="./images/image-hero-tablet.png">
+          <img src="./images/image-hero-mobile.png" alt="hero" class="object-cover object-center h-full mx-auto md:relative md:-right-32 lg:-right-52">
+        </picture>
+      </div>
+    </div>
+  </main>
+  <!-- cards section -->
+  <section class="py-10">
+    <!-- grid container -->
+    <div id='cards' class="container mx-auto grid gap-5 px-5 xl:grid-cols-3">
+      <!-- card -->
+      <div class="text-white rounded-lg" style="background-image:var(--gradOne);">
+        <!--content -->
+        <div class="h-[250px] py-3 flex flex-col justify-center">
+        <p class="px-4 font-bold text-3xl">Checkout our most popular courses!</p>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="bg-white rounded-lg py-3">
+        <!-- content -->
+        <div class="px-4 flex flex-col h-[250px] justify-between">
+          <!-- image -->
+          <div>
+            <img src="./images/icon-animation.svg" alt="" class="w-12">
+          </div>
+          <h2 class="text-lg font-bold text-primary-blue">Animation</h2>
+          <p class="text-primary-textGray">Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
+          <a href="#" class="block text-primary-mainOrange font-bold ease-in-out duration-300 hover:opacity-50">Get Started</a>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="bg-white rounded-lg py-3">
+        <!-- content -->
+        <div class="px-4 flex flex-col h-[250px] justify-between">
+          <!-- image -->
+          <div>
+            <img src="./images/icon-design.svg" alt="design" class="w-12">
+          </div>
+          <h2 class="text-lg font-bold text-primary-blue">Design</h2>
+          <p class="text-primary-textGray">Create beautiful usable interfaces to help shape the future of how the web looks.</p>
+          <a href="#" class="block text-primary-mainOrange font-bold ease-in-out duration-300 hover:opacity-50">Get Started</a>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="bg-white rounded-lg py-3">
+        <!-- content -->
+        <div class="px-4 flex flex-col h-[250px] justify-between">
+          <!-- image -->
+          <div>
+            <img src="./images/icon-photography.svg" alt="photography" class="w-12">
+          </div>
+          <h2 class="text-lg font-bold text-primary-blue">Photography</h2>
+          <p class="text-primary-textGray">Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.</p>
+          <a href="#" class="block text-primary-mainOrange font-bold ease-in-out duration-300 hover:opacity-50">Get Started</a>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="bg-white rounded-lg py-3">
+        <!-- content -->
+        <div class="px-4 flex flex-col h-[250px] justify-between">
+          <!-- image -->
+          <div>
+            <img src="./images/icon-crypto.svg" alt="" class="w-12">
+          </div>
+          <h2 class="text-lg font-bold text-primary-blue">Crypto</h2>
+          <p class="text-primary-textGray">All you need to know to get started investing in crypto. Go from beginner to advanced with...</p>
+          <a href="#" class="block text-primary-mainOrange font-bold ease-in-out duration-300 hover:opacity-50">Get Started</a>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="bg-white rounded-lg py-3">
+        <!-- content -->
+        <div class="px-4 flex flex-col h-[250px] justify-between">
+          <!-- image -->
+          <div>
+            <img src="./images/icon-business.svg" alt="business" class="w-12">
+          </div>
+          <h2 class="text-lg font-bold text-primary-blue">Business</h2>
+          <p class="text-primary-textGray">A step-by-step playbook to help you start, scale and sustain your business without outside investment.</p>
+          <a href="#" class="block text-primary-mainOrange font-bold ease-in-out duration-300 hover:opacity-50">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="py-5 bg-primary-blue text-white">
+    <!-- content -->
+    <div class="container mx-auto flex items-center justify-between px-5">
+      <p class="text-3xl font-bold">skilled</p>
+      <a href="#" class="block text-white p-2 px-4 text-sm rounded-full relative group" style="background-image:var(--gradTwo);">Get Started
+        <!-- hover state -->
+        <div class="absolute inset-0 bg-primary-blueHover ease-in-out duration-300 rounded-full opacity-0 group-hover:opacity-50"></div>
+      </a>
+    </div>
+  </footer>
+  <div>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Mohamed Mostafa</a>.
+    </p>
+  </div>
+</body>
+</html>
